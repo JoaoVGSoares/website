@@ -13,6 +13,10 @@ body {
   background-color: rgba(117, 165, 219, 0.267);
 }
 
+hr {
+  width: 30%;
+}
+
 img {
   display: block;
 }
