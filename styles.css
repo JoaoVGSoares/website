@@ -1,0 +1,262 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: rgba(117, 165, 219, 0.267);
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  margin: auto;
+  max-width: 90%;
+}
+
+header {
+  background-image: url(oCover.png);
+  background-repeat: repeat;
+  background-blend-mode: color-burn;
+  background-color: rgb(28, 59, 78);
+  color: whitesmoke;
+  background-size: contain;
+  text-align: center;
+  padding: 2rem;
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 1em;
+  border-radius: 16px;
+  font-size: 1rem;
+  background-color: whitesmoke;
+  border: 1px solid rgb(165, 165, 28);
+}
+
+button:hover {
+  color: whitesmoke;
+  background-color: rgb(165, 165, 28);
+  cursor: pointer;
+}
+
+section {
+  margin-inline: auto;
+}
+
+.tituloSessao {
+  gap: 0.5rem;
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.tituloSessao img {
+  rotate: 90deg;
+  width: 6vh;
+}
+.colunaImagem img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1/0.6;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+main > * {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.sessaoHistoria button {
+  margin-top: 16px;
+}
+
+.sessaoPaises {
+  background-color: rgb(20, 44, 66);
+  justify-content: center;
+  color: whitesmoke;
+  box-shadow: 0 0 0 100vmax rgb(20, 44, 66);
+  clip-path: inset(0 -100vmax);
+  padding: 1rem;
+}
+
+.lista {
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.conteudoHistoria {
+  margin-top: 1em;
+  width: 100%;
+  margin: auto;
+  gap: 0.5rem;
+  display: flex;
+}
+
+.conteudoHistoria > * {
+  flex-basis: 100%;
+}
+.tabelaPaises {
+  margin-inline: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.precos {
+  display: grid;
+  grid-auto-columns: 1fr;
+}
+
+.precos > * {
+  text-align: center;
+}
+
+.boxPreco {
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.numeroPreco {
+  font-size: 2rem;
+}
+
+.contato {
+  align-items: center;
+  justify-content: space-evenly;
+  color: whitesmoke;
+  gap: 1rem;
+}
+
+footer {
+  background-color: rgb(7, 7, 39);
+  color: whitesmoke;
+  min-height: 24vw;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artigosGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: auto;
+}
+
+.artigosGrid button {
+  padding: 1em;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+.artigosGrid img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 32px 32px 0 0;
+  aspect-ratio: 1/0.8;
+}
+
+.verao img {
+  object-position: top left;
+}
+
+.conteudoArtigo {
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 0 0 32px 32px;
+  padding: 1em;
+}
+
+.conteudoArtigo > p {
+  padding: 0.5em;
+}
+
+.artigosGrid h3 {
+  border: 1px solid gold;
+  border-radius: 32px;
+  background-color: black;
+  margin-top: -2rem;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.2em;
+}
+
+.artigosGrid > * {
+  text-align: center;
+}
+
+.sessao {
+  margin-inline: auto;
+}
+
+.sessaoPrecos button {
+  margin-bottom: 1rem;
+  width: fit-content;
+  min-width: fit-content;
+}
+@media (min-width: 500px) {
+  .tituloSessao img {
+    rotate: 0deg;
+    width: 6vw;
+  }
+
+  .precos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .artigosGrid img {
+    aspect-ratio: 1/0.5;
+  }
+}
+
+@media (max-width: 430px) {
+  .artigosGrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1050px) {
+  section {
+    margin-inline: auto;
+    width: 66vw;
+  }
+
+  .artigosGrid {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .verao img {
+    aspect-ratio: 1/1.2;
+  }
+
+  .inverno img {
+    aspect-ratio: 1/1;
+  }
+  .paralimpiadas img {
+    aspect-ratio: 1/0.8;
+  }
+  .juventude img {
+    aspect-ratio: 1/0.6;
+  }
+}
