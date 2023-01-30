@@ -27,7 +27,7 @@ main {
 }
 
 header {
-  background-image: url(oCover.png);
+  background-image: url(imagens/oCover.png);
   background-repeat: repeat;
   background-blend-mode: color-burn;
   background-color: rgb(28, 59, 78);
