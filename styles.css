@@ -1,3 +1,13 @@
+:root {
+  --branco: rgb(245, 245, 245);
+  --azul-claro: rgb(119, 152, 171);
+  --azul: rgb(58, 67, 94);
+  --azul-escuro: rgb(49, 62, 80);
+  --cinza-escuro: rgb(156, 156, 156);
+  --cinza-claro: rgb(204, 204, 204);
+  --preto: rgb(0, 0, 0);
+}
+
 *,
 *::before,
 *::after {
@@ -9,8 +19,9 @@
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 body {
-  background-color: whitesmoke;
+  background-color: var(--branco);
 }
 
 hr {
@@ -30,12 +41,20 @@ main {
   max-width: 90%;
 }
 
+a {
+  color: var(--branco);
+}
+
+a:visited {
+  color: var(--azul-claro);
+}
+
 header {
   background-image: url(imagens/oCover.png);
   background-repeat: repeat;
   background-blend-mode: color-burn;
-  background-color: rgb(49, 62, 80);
-  color: whitesmoke;
+  background-color: var(--azul-escuro);
+  color: var(--branco);
   background-size: contain;
   text-align: center;
   padding: 2rem;
@@ -46,19 +65,20 @@ button {
   padding: 1em;
   border-radius: 32px;
   font-size: 1rem;
-  background-color: whitesmoke;
-  border: 1px solid rgb(119, 152, 171);
+  background-color: var(--branco);
+  border: 1px solid var(--azul-claro);
 }
 
 button:hover {
-  color: whitesmoke;
-  background-color: rgb(119, 152, 171);
+  color: var(--branco);
+  background-color: var(--azul-claro);
   cursor: pointer;
 }
 
 h1 {
   font-size: 3rem;
 }
+
 section {
   margin-inline: auto;
 }
@@ -75,6 +95,7 @@ section {
   rotate: 90deg;
   width: 6vh;
 }
+
 .conteudo__img img {
   height: 100%;
   width: 100%;
@@ -94,10 +115,10 @@ main > * {
 }
 
 .sessao-paises {
-  background-color: rgb(58, 67, 94);
+  background-color: var(--azul);
   justify-content: center;
-  color: whitesmoke;
-  box-shadow: 0 0 0 100vmax rgb(58, 67, 94);
+  color: var(--branco);
+  box-shadow: 0 0 0 100vmax var(--azul);
   clip-path: inset(0 -100vmax);
   padding: 1rem;
 }
@@ -107,6 +128,7 @@ main > * {
   display: flex;
   justify-content: center;
 }
+
 .historia__conteudo {
   margin-top: 1em;
   width: 100%;
@@ -118,6 +140,14 @@ main > * {
 .historia__conteudo > * {
   flex-basis: 100%;
 }
+
+table,
+td,
+th {
+  border: 1px solid var(--branco);
+  border-collapse: collapse;
+}
+
 .sessao-paises__tabela {
   margin-inline: auto;
   width: 100%;
@@ -134,7 +164,7 @@ main > * {
 }
 
 .precos-box > .conteudo {
-  border: 1px solid black;
+  border: 1px solid var(--preto);
   border-radius: 16px;
   padding: 1rem;
   display: flex;
@@ -148,14 +178,14 @@ main > * {
 .rodape__contato {
   align-items: center;
   justify-content: space-evenly;
-  color: whitesmoke;
+  color: var(--branco);
   gap: 1rem;
 }
 
 footer {
-  background-color: rgb(49, 62, 80);
-  color: whitesmoke;
-  min-height: 24vw;
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+  min-height: 10rem;
   gap: 1rem;
   display: flex;
   justify-content: center;
@@ -175,6 +205,7 @@ footer {
   width: fit-content;
   margin-bottom: 1rem;
 }
+
 .artigos-grid img {
   width: 100%;
   object-fit: cover;
@@ -187,7 +218,7 @@ footer {
 }
 
 .artigo__conteudo {
-  background-color: rgb(204, 204, 204);
+  background-color: var(--cinza-claro);
   border-radius: 0 0 32px 32px;
   padding: 1em;
 }
@@ -197,9 +228,9 @@ footer {
 }
 
 .artigos-grid h3 {
-  border: 1px solid rgb(38, 43, 58);
+  border: 1px solid var(--preto);
   border-radius: 32px;
-  background-color: rgb(156, 156, 156);
+  background-color: var(--cinza-escuro);
   margin-top: -2rem;
   font-size: 1rem;
   position: relative;
@@ -219,6 +250,7 @@ footer {
   width: fit-content;
   min-width: fit-content;
 }
+
 @media (min-width: 500px) {
   .sessao__titulo img {
     rotate: 0deg;
@@ -243,6 +275,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 @media (min-width: 1050px) {
   section {
     margin-inline: auto;
@@ -260,9 +293,11 @@ footer {
   .inverno img {
     aspect-ratio: 1/1;
   }
+
   .paralimpiadas img {
     aspect-ratio: 1/0.8;
   }
+
   .juventude img {
     aspect-ratio: 1/0.6;
   }
