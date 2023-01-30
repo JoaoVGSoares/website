@@ -10,7 +10,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-  background-color: rgba(117, 165, 219, 0.267);
+  background-color: rgb(223, 223, 223);
 }
 
 hr {
@@ -34,7 +34,7 @@ header {
   background-image: url(imagens/oCover.png);
   background-repeat: repeat;
   background-blend-mode: color-burn;
-  background-color: rgb(28, 59, 78);
+  background-color: rgb(49, 62, 80);
   color: whitesmoke;
   background-size: contain;
   text-align: center;
@@ -47,12 +47,12 @@ button {
   border-radius: 32px;
   font-size: 1rem;
   background-color: whitesmoke;
-  border: 1px solid rgb(82, 94, 255);
+  border: 1px solid rgb(119, 152, 171);
 }
 
 button:hover {
   color: whitesmoke;
-  background-color: rgb(82, 94, 255);
+  background-color: rgb(119, 152, 171);
   cursor: pointer;
 }
 
@@ -90,10 +90,10 @@ main > * {
 }
 
 .sessaoPaises {
-  background-color: rgb(20, 44, 66);
+  background-color: rgb(58, 67, 94);
   justify-content: center;
   color: whitesmoke;
-  box-shadow: 0 0 0 100vmax rgb(20, 44, 66);
+  box-shadow: 0 0 0 100vmax rgb(58, 67, 94);
   clip-path: inset(0 -100vmax);
   padding: 1rem;
 }
@@ -149,7 +149,7 @@ main > * {
 }
 
 footer {
-  background-color: rgb(7, 7, 39);
+  background-color: rgb(49, 62, 80);
   color: whitesmoke;
   min-height: 24vw;
   gap: 1rem;
@@ -183,8 +183,7 @@ footer {
 }
 
 .conteudoArtigo {
-  color: whitesmoke;
-  background-color: black;
+  background-color: rgb(235, 210, 190);
   border-radius: 0 0 32px 32px;
   padding: 1em;
 }
@@ -194,9 +193,9 @@ footer {
 }
 
 .artigosGrid h3 {
-  border: 1px solid gold;
+  border: 1px solid rgb(38, 43, 58);
   border-radius: 32px;
-  background-color: black;
+  background-color: rgb(235, 210, 190);
   margin-top: -2rem;
   font-size: 1rem;
   position: relative;
