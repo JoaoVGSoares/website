@@ -286,19 +286,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 
-  .verao img {
-    aspect-ratio: 1/1.2;
-  }
-
-  .inverno img {
-    aspect-ratio: 1/1;
-  }
-
-  .paralimpiadas img {
-    aspect-ratio: 1/0.8;
-  }
-
-  .juventude img {
-    aspect-ratio: 1/0.6;
+  .artigos-grid img {
+    aspect-ratio: 1 / calc(1 - (var(--order) * 0.1));
   }
 }
