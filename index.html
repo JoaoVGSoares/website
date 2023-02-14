@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="favIcon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
     <title>Olimpíadas</title>
   </head>
   <body>
@@ -47,61 +48,98 @@
           </aside>
         </div>
       </section>
-      <section class="sessao-eventos sessao--margem">
+      <section class="sessao-eventos sessao--margem" id="secao-eventos">
         <div class="sessao__titulo">
           <img class="logo" src="imagens/olIcon.svg" alt="Logo Olimpiadas" />
           <h2>Eventos Olímpicos</h2>
         </div>
         <div class="artigos-grid">
-          <article class="artigo verao">
-            <img
-              src="imagens/summer.jpg"
-              alt="Foto Olimpíadas de Verão"
-              style="--order: 1"
-            />
-            <div class="artigo__conteudo">
-              <h3>Verão</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <button class="btn">Veja mais</button>
-          </article>
-          <article class="artigo inverno">
-            <img
-              src="imagens/winter.jpeg"
-              alt="Foto Olimpíadas de Inverno"
-              style="--order: 2"
-            />
-            <div class="artigo__conteudo">
-              <h3>Inverno</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <button class="btn">Veja mais</button>
-          </article>
-          <article class="artigo paralimpiadas">
-            <img
-              src="imagens/paralympics.jpg"
-              alt="Foto Paralimpiadas"
-              style="--order: 3"
-            />
-            <div class="artigo__conteudo">
-              <h3>Paralimpíadas</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <button class="btn">Veja mais</button>
-          </article>
-          <article class="artigo juventude">
-            <img
-              src="imagens/youth.jpg"
-              alt="Foto Olimpíadas da Juventude"
-              style="--order: 4"
-            />
-            <div class="artigo__conteudo">
-              <h3>Juventude</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <button class="btn">Veja mais</button>
-          </article>
+          <div class="grid-um">
+            <article class="artigo verao">
+              <img
+                src="imagens/summer.jpg"
+                alt="Foto Olimpíadas de Verão"
+                style="--order: 1"
+              />
+              <div class="artigo__conteudo">
+                <h3>Verão</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <button class="btn">Veja mais</button>
+            </article>
+            <article class="artigo inverno">
+              <img
+                src="imagens/winter.jpeg"
+                alt="Foto Olimpíadas de Inverno"
+                style="--order: 2"
+              />
+              <div class="artigo__conteudo">
+                <h3>Inverno</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <button class="btn">Veja mais</button>
+            </article>
+            <article class="artigo paralimpiadas">
+              <img
+                src="imagens/paralympics.jpg"
+                alt="Foto Paralimpiadas"
+                style="--order: 3"
+              />
+              <div class="artigo__conteudo">
+                <h3>Paralimpíadas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <button class="btn">Veja mais</button>
+            </article>
+            <article class="artigo juventude">
+              <img
+                src="imagens/youth.jpg"
+                alt="Foto Olimpíadas da Juventude"
+                style="--order: 4"
+              />
+              <div class="artigo__conteudo">
+                <h3>Juventude</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <button class="btn">Veja mais</button>
+            </article>
+          </div>
+          <div class="grid-dois hide" id="artigos-grid-2">
+            <article class="artigo artigo-1">
+              <img src="imagens/dog.jpg" alt="Foto de um cachorro" />
+              <div class="artigo__conteudo">
+                <h3>Cachorro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <button class="btn">Veja mais</button>
+            </article>
+            <article class="artigo artigo-2">
+              <img src="imagens/dog.jpg" alt="Foto de um cachorro" />
+              <div class="artigo__conteudo">
+                <h3>Cachorro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <button class="btn">Veja mais</button>
+            </article>
+            <article class="artigo artigo-3">
+              <img src="imagens/dog.jpg" alt="Foto de um cachorro" />
+              <div class="artigo__conteudo">
+                <h3>Cachorro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <button class="btn">Veja mais</button>
+            </article>
+            <article class="artigo artigo-4">
+              <img src="imagens/dog.jpg" alt="Foto de um cachorro" />
+              <div class="artigo__conteudo">
+                <h3>Cachorro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <button class="btn">Veja mais</button>
+            </article>
+          </div>
         </div>
+        <button class="botao" id="botao-veja-mais">Veja mais</button>
       </section>
       <section class="sessao-paises sessao--margem">
         <div class="sessao__titulo">
@@ -151,7 +189,8 @@
             <div class="conteudo">
               <h3>
                 Prata <br />
-                <i>R$</i> <span class="numero-preco"><b>150,00</b></span>
+                <i>R$</i> <span class="numero-preco"><b>150,00</b></span
+                >&nbsp;
                 <i>reais</i>
               </h3>
             </div>
@@ -163,7 +202,8 @@
             <div class="conteudo">
               <h3>
                 Bronze <br />
-                <i>R$</i> <span class="numero-preco"><b>50,00</b></span>
+                <i>R$</i> <span class="numero-preco"><b>50,00</b></span
+                >&nbsp;
                 <i>reais</i>
               </h3>
             </div>
@@ -185,7 +225,9 @@
         </div>
       </div>
       <hr />
-      <p><small>All rights reserved@</small></p>
+      <p>
+        <small>All rights reserved</small><sup><small>&copy</small></sup>
+      </p>
     </footer>
   </body>
 </html>

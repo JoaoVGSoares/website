@@ -113,6 +113,9 @@ main > * {
 .sessao-historia button {
   margin-top: 16px;
 }
+.sessao-eventos {
+  text-align: center;
+}
 
 .sessao-paises {
   background-color: var(--azul);
@@ -193,7 +196,7 @@ footer {
   align-items: center;
 }
 
-.artigos-grid {
+.artigos-grid > * {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -271,7 +274,7 @@ footer {
 }
 
 @media (max-width: 430px) {
-  .artigos-grid {
+  .artigos-grid > * {
     grid-template-columns: 1fr;
   }
 }
@@ -282,11 +285,17 @@ footer {
     width: 66vw;
   }
 
-  .artigos-grid {
+  .artigos-grid > * {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 
   .artigos-grid img {
-    aspect-ratio: 1 / calc(1 - (var(--order) * 0.1));
+    aspect-ratio: 1/1;
+    /* aspect-ratio: 1 / calc(1 - (var(--order) * 0.1));
+  */
   }
+}
+
+.hide {
+  display: none;
 }
