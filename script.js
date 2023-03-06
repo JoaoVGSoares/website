@@ -15,6 +15,11 @@ const fourthArticle = document.getElementById("fourth");
 setInnerHTML(header, headerContent);
 setInnerHTML(footer, footerContent);
 
+generateArticle(firstArticle, articles.summer);
+generateArticle(secondArticle, articles.winter);
+generateArticle(thirdArticle, articles.paralympics);
+generateArticle(fourthArticle, articles.youth);
+
 function generateArticle(articlePosition, articleContent) {
   const { src, alt, title, content } = articleContent;
   const img = document.createElement("img");
@@ -37,11 +42,6 @@ function generateArticle(articlePosition, articleContent) {
     articlePosition.appendChild(contentDiv);
   }
 }
-
-generateArticle(firstArticle, articles.summer);
-generateArticle(secondArticle, articles.winter);
-generateArticle(thirdArticle, articles.paralympics);
-generateArticle(fourthArticle, articles.youth);
 
 function displayContent() {
   toggleClass(artigosGrid2, "hide");
