@@ -331,11 +331,12 @@ footer {
 #article {
   text-align: center;
   margin: auto;
+  width: 20vw;
 }
 .article img {
   width: 100%;
   max-height: 30vh;
   object-fit: cover;
   border-radius: 32px 32px 0 0;
-  aspect-ratio: 0.8/1;
+  aspect-ratio: 0.6/1;
 }
