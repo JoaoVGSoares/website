@@ -22,6 +22,9 @@
 
 body {
   background-color: var(--branco);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 hr {
@@ -37,8 +40,9 @@ ul {
 }
 
 main {
-  margin: auto;
-  max-width: 90%;
+  margin: 0 auto;
+  width: 90%;
+  flex: 1;
 }
 
 a {
