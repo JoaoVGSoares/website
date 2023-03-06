@@ -60,7 +60,12 @@ header {
   padding: 2rem;
 }
 
-button {
+.link_btn {
+  color: black;
+  display: block;
+}
+button,
+.link_btn {
   margin-top: 0.5rem;
   padding: 1em;
   border-radius: 32px;
@@ -69,7 +74,8 @@ button {
   border: 1px solid var(--azul-claro);
 }
 
-button:hover {
+button:hover,
+.link_btn:hover {
   color: var(--branco);
   background-color: var(--azul-claro);
   cursor: pointer;
@@ -203,7 +209,8 @@ footer {
   margin: auto;
 }
 
-.artigos-grid button {
+.artigos-grid button,
+.link_btn {
   padding: 1em;
   width: fit-content;
   margin-bottom: 1rem;
@@ -218,6 +225,10 @@ footer {
 
 .verao img {
   object-position: top left;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 32px 32px 0 0;
+  aspect-ratio: 1/0.8;
 }
 
 .artigo__conteudo {
@@ -294,8 +305,37 @@ footer {
     /* aspect-ratio: 1 / calc(1 - (var(--order) * 0.1));
   */
   }
+  .botao-voltar {
+    position: absolute;
+  }
 }
 
 .hide {
   display: none;
+}
+
+.articlePage img {
+  aspect-ratio: 1/1;
+  height: 50%;
+}
+
+.artigo > a {
+  order: 1;
+}
+.artigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#article {
+  text-align: center;
+  margin: auto;
+}
+.article img {
+  width: 100%;
+  max-height: 30vh;
+  object-fit: cover;
+  border-radius: 32px 32px 0 0;
+  aspect-ratio: 0.8/1;
 }

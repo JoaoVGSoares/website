@@ -6,23 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="favIcon.png" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <script src="script.js" defer type="module"></script>
     <title>Olimpíadas</title>
   </head>
   <body>
-    <header>
-      <h1>Jogos Olímpicos</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
-        reprehenderit quos vero dolorem
-      </p>
-      <h4>
-        <a href="https://olympics.com/en/" target="_blank"
-          >Visite o site oficial</a
-        >
-      </h4>
-      <button class="cabecalho__botao">Veja mais</button>
-    </header>
+    <header id="header"></header>
     <main>
       <section class="sessao-historia sessao--margem">
         <div class="historia__conteudo">
@@ -41,7 +29,7 @@
               explicabo, vel, dolorum aliquam vitae cum voluptatibus fugiat qui
               voluptate.
             </p>
-            <button class="btn">Veja mais</button>
+            <a class="link_btn" href="history.html">Veja mais</a>
           </div>
           <aside class="conteudo__img">
             <img src="imagens/oldOlympic.jpeg" alt="Old olympic games photo" />
@@ -54,54 +42,18 @@
           <h2>Eventos Olímpicos</h2>
         </div>
         <div class="artigos-grid">
-          <div class="grid-um">
-            <article class="artigo verao">
-              <img
-                src="imagens/summer.jpg"
-                alt="Foto Olimpíadas de Verão"
-                style="--order: 1"
-              />
-              <div class="artigo__conteudo">
-                <h3>Verão</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-              <button class="btn">Veja mais</button>
+          <div class="grid-um" id="grid1">
+            <article class="artigo verao" id="first">
+              <a class="link_btn" href="summer.html">Veja mais</a>
             </article>
-            <article class="artigo inverno">
-              <img
-                src="imagens/winter.jpeg"
-                alt="Foto Olimpíadas de Inverno"
-                style="--order: 2"
-              />
-              <div class="artigo__conteudo">
-                <h3>Inverno</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-              <button class="btn">Veja mais</button>
+            <article class="artigo inverno" id="second">
+              <a href="articles.html" class="link_btn">Veja mais</a>
             </article>
-            <article class="artigo paralimpiadas">
-              <img
-                src="imagens/paralympics.jpg"
-                alt="Foto Paralimpiadas"
-                style="--order: 3"
-              />
-              <div class="artigo__conteudo">
-                <h3>Paralimpíadas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-              <button class="btn">Veja mais</button>
+            <article class="artigo paralimpiadas" id="third">
+              <a href="articles.html" class="link_btn">Veja mais</a>
             </article>
-            <article class="artigo juventude">
-              <img
-                src="imagens/youth.jpg"
-                alt="Foto Olimpíadas da Juventude"
-                style="--order: 4"
-              />
-              <div class="artigo__conteudo">
-                <h3>Juventude</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-              <button class="btn">Veja mais</button>
+            <article class="artigo juventude" id="fourth">
+              <a href="articles.html" class="link_btn">Veja mais</a>
             </article>
           </div>
           <div class="grid-dois hide" id="artigos-grid-2">
@@ -111,7 +63,7 @@
                 <h3>Cachorro</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
-              <button class="btn">Veja mais</button>
+              <a href="articles.html" class="link_btn">Veja mais</a>
             </article>
             <article class="artigo artigo-2">
               <img src="imagens/dog.jpg" alt="Foto de um cachorro" />
@@ -119,7 +71,7 @@
                 <h3>Cachorro</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
-              <button class="btn">Veja mais</button>
+              <a href="articles.html" class="link_btn">Veja mais</a>
             </article>
             <article class="artigo artigo-3">
               <img src="imagens/dog.jpg" alt="Foto de um cachorro" />
@@ -127,7 +79,7 @@
                 <h3>Cachorro</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
-              <button class="btn">Veja mais</button>
+              <a href="articles.html" class="link_btn">Veja mais</a>
             </article>
             <article class="artigo artigo-4">
               <img src="imagens/dog.jpg" alt="Foto de um cachorro" />
@@ -135,7 +87,7 @@
                 <h3>Cachorro</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
-              <button class="btn">Veja mais</button>
+              <a href="articles.html" class="link_btn">Veja mais</a>
             </article>
           </div>
         </div>
@@ -214,20 +166,6 @@
         </div>
       </section>
     </main>
-    <footer class="rodape">
-      <div class="rodape__contato">
-        <h3>Entre em contato:</h3>
-        <div class="contato__conteudo">
-          <ul class="contato__lista">
-            <li>Whatsapp</li>
-            <li>Email</li>
-          </ul>
-        </div>
-      </div>
-      <hr />
-      <p>
-        <small>All rights reserved</small><sup><small>&copy</small></sup>
-      </p>
-    </footer>
+    <footer class="rodape" id="footer"></footer>
   </body>
 </html>
